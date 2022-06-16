@@ -5,10 +5,10 @@
 ## Dataset yang digunakan
 Data yang digunakan ialah data Jumlah Desa/Kelurahan Menurut Jenis Upaya Warganya untuk Menjaga Keamanan Menurut Provinsi Tahun 2018.
 Variabel yang digunakan adalah sebagai berikut :
-- Membangun Poskamling
-- Membentuk Regu Kamling
-- Menambah Anggota Hansip
-- Pelaporan Tamu Menginap (1x24 jam)
+- Membangun Poskamling (X1)
+- Membentuk Regu Kamling (X2)
+- Menambah Anggota Hansip (X3)
+- Pelaporan Tamu Menginap (1x24 jam) (X4)
 
 Berikut adalah data yang digunakan :
 <p align="center">
@@ -18,7 +18,7 @@ Berikut adalah data yang digunakan :
 ## K-Means Clustering
 <p align="justify">K-Means Clustering adalah salah cara untuk menganalisis kelompok dengan metode pengelompokan non hierarki (Supranto, 2004). Metode ini merupakan metode yang tepat untuk data yang cukup besar, selain itu proses pengelompokan pada metode non hirarki lebih cepat daripada metode hierarki. </p>
 
-> Menentukan banyaknya kelompok (Metode Silhouette) 
+#### Menentukan banyaknya kelompok (Metode Silhouette) 
 ```{r}
 fviz_nbclust(df_num, kmeans, method = "silhouette") 
 ```
@@ -26,7 +26,9 @@ fviz_nbclust(df_num, kmeans, method = "silhouette")
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/kelompok.PNG" width="500" height="300" />
 </p>
 
-> Proses Clustering
+Pada Gambar tampak bahwa banyak klaster yang optimal terbentuk saat k=2. Maka untuk melakukan analisis kelompok akan digunakan k=2.
+
+#### Proses Clustering
 ```{r}
 model=kmeans(df_num,centers=2,nstart=20)
 model
@@ -36,7 +38,9 @@ model$centers
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/centroid.PNG" />
  </p>
  
-> Provinsi di Tiap Kelompok 
+Dikarenakan centroid kelompok 2 lebih besar dibandingkan kelompok 1, maka kelompok 2 dikategorikan sebagai kelompok baik dan kelompok 1 dikategorikan sebagai kelompok buruk.
+
+#### Provinsi di Tiap Kelompok 
 ```{r}
 final=data.frame(df, model$cluster)
 View(final)
@@ -44,6 +48,9 @@ View(final)
 <p align="center">
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/hasil.PNG" />
 </p>
+
+- Kelompok 1 (Buruk) terdiri dari 12 provinsi
+- Kelompok 2 (Baik) terdiri dari 22 provinsi
 
 ## Perancangan Dashboard
 <p align="justify">
@@ -62,6 +69,8 @@ Pada sebelah kiri dashboard, terdapat side bar yang dapat digunakan untuk memili
 </p>
 
 ## Visualisasi (Data dan Informasi) dan Pembuatan Dashboard
+Dashboard dapat diakses secara daring melalui link (https://public.tableau.com/views/Dashboardvisdat/Main?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
 Jenis visualisasi data dan informasi yang digunakan adalah :
 - Peta Tematik (Choropleth)
 - Tabel
@@ -70,8 +79,8 @@ Jenis visualisasi data dan informasi yang digunakan adalah :
 - Pie Chart
 - Tree Map Chart
 
-> Tambahan pada Dashboard
-> 
+#### Tambahan pada Dashboard
+
 Selain menampilkan visualisasi data dan informasi, terdapat beberapa tambahan pada dashboard untuk memudahkan pengguna.
 - Sidebar   : Pada sidebar terdapat 5 navigasi yang dapat mengarahkan langsung ke halaman variabel X1, X2, X3, ataupun X4. 
 - Tooltip   : Dikarenakan nama variabel yang panjang, pada button navigasi hanya ditulis X1, X2, X3, X4, dan main. Akan tetapi, apabila kursor diarahkan ke atas button navigasi maka akan keluar tooltip/keterangan yaitu nama variabel
@@ -103,4 +112,46 @@ Menampilkan visualisasi berupa peta tematik, treemap, dan tabel untuk masing-mas
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V4.png" width="600" height="300" />
 </p>
 
+#### Embed Dashboard Tableau
+Dashboard yang telah dibuat di tableau dapat dipublikasikan dan diakses secara daring. Apabila ingin menyimpan dalam format html maka dilakukan embed pada dashboard. Cata mengembed dashboard tableau adalah dengan menyalin embed code pada tableau lalu diletakkan pada bagian div.
+
+```
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard Visualisasi Data dan Informasi </title>
+</head>
+<body>
+
+ #Embed Code dimulai dari sini
+  <div class='tableauPlaceholder' id='viz1655375225288' style='position: relative'><noscript><a href='#'>
+    <img alt='Main ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboardvisdat&#47;Main&#47;1_rss.png' style='border: none' /></a></noscript>
+    <object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+      <param name='name' value='Dashboardvisdat&#47;Main' />
+      <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboardvisdat&#47;Main&#47;1.png' /> 
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' /></object>
+    </div>                
+    <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1655375225288');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    vizElement.style.width='1920px';vizElement.style.height='1107px';                    
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+     </script>
+  ## Akhir Embed Code
+  
+</body>
+</html>
+```
 
