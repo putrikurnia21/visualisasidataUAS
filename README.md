@@ -1,4 +1,4 @@
-# Implementasi Algoritma K-Means Clustering dan Visualisasi Dashboard Untuk Analisis Upaya Warga dalam Menjaga Keamanan Berdasarkan Provinsi di Indonesia 
+<h1 align="center"> Implementasi Algoritma K-Means Clustering dan Visualisasi Dashboard Untuk Analisis Upaya Warga dalam Menjaga Keamanan Berdasarkan Provinsi di Indonesia </h1>
 
 <p align="justify"> Negara berkembang seperti Indonesia memiliki beberapa masalah serius, salah satunya ialah kriminalitas. Penelitian ini menggunakan salah satu teknik data mining, yaitu dengan metode K-Means Clustering agar dapat mengelompokkan 34 provinsi dan mendapatkan provinsi yang baik dan buruk dalam melakukan upaya menjaga keamanan di daerahnya. Setelah itu dilakukan visualisasi terhadap hasil clustering dalam bentuk dashboard. Dengan adanya pengelompokan dan pembuatan dashboard diharapkan adanya solusi baik dari pemerintah maupun masyarakat untuk bekerja sama agar dapat meningkatkan keamanan pada provinsi di Indonesia, khususnya untuk daerah yang tergolong belum baik. Data pada penelitian ini diambil dari publikasi Statistik Kriminal 2021 yang berisi data kriminalitas 34 provinsi di Indonesia, dengan variabel yang digunakan yaitu Membangun Poskamling, Membentuk Regu Kamling, Menambah Anggota Hansip, dan Pelaporan Tamu yang Menginap dalam Kurun Waktu 1x24 jam. Dari hasil analisis cluster didapatkan bahwa provinsi dengan kategori baik dalam mengupayakan keamanan berjumlah 23 provinsi, sedangkan provinsi dengan kategori buruk berjumlah 11. </p>
  
@@ -52,9 +52,14 @@ Pada sebelah kiri dashboard, terdapat side bar yang dapat digunakan untuk memili
  </p>
  
 > Perancangan Dashboard Main (Hasil clustering)
-
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/Main.png" width="500" height="300"/>
+</p>
 
 > Perancangan Dashboard X1, X2, X3, dan X4
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/Desain Var.png" width="500" height="300" />
+</p>
 
 ## Visualisasi (Data dan Informasi) dan Pembuatan Dashboard
 Jenis visualisasi data dan informasi yang digunakan adalah :
