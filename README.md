@@ -11,9 +11,8 @@ Variabel yang digunakan adalah sebagai berikut :
 - Pelaporan Tamu Menginap (1x24 jam)
 
 Berikut adalah data yang digunakan :
+![](Data.png)
 
-
-       
 ## K-Means Clustering
 <p align="justify">K-Means Clustering adalah salah cara untuk menganalisis kelompok dengan metode pengelompokan non hierarki (Supranto, 2004). Metode ini merupakan metode yang tepat untuk data yang cukup besar, selain itu proses pengelompokan pada metode non hirarki lebih cepat daripada metode hierarki. </p>
 
