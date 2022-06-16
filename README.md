@@ -9,6 +9,7 @@ Variabel yang digunakan adalah sebagai berikut :
 - Membentuk Regu Kamling
 - Menambah Anggota Hansip
 - Pelaporan Tamu Menginap (1x24 jam)
+
 Berikut adalah data yang digunakan :
 
 
