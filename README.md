@@ -100,8 +100,20 @@ Selain menampilkan visualisasi data dan informasi, terdapat beberapa tambahan pa
 - Sidebar   : Pada sidebar terdapat 5 navigasi yang dapat mengarahkan langsung ke halaman variabel X1, X2, X3, ataupun X4. 
 - Tooltip   : Dikarenakan nama variabel yang panjang, pada button navigasi hanya ditulis X1, X2, X3, X4, dan main. Akan tetapi, apabila kursor diarahkan ke atas button navigasi maka akan keluar tooltip/keterangan yaitu nama variabel
 - Download  : Dapat mendownload tampilan dashboard berupa gambar pdf, ataupun power point
-- Action    : Action pada dashboard adalah apabila mengklik visualisasi salah satu provinsi pada dashboard hamalan X1, X2, X3, dan X4 maka yang akan ditampilkan hanya provinsi tersebut
 - Search    : Mencari informasi berdasarkan nama provinsi
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/tambahan.png" width="600" height="300" />
+</p>
+
+- Pilih Kelompok : Pada Dashboard "main" tepatnya peta tematik, dapat dipilih cluster mana yang ingin ditampilkan
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/choose.png" width="600" height="300" />
+</p>
+
+- Action    : Action pada dashboard adalah apabila mengklik visualisasi salah satu provinsi pada dashboard hamalan X1, X2, X3, dan X4 maka yang akan ditampilkan hanya provinsi tersebut
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/action.png" width="600" height="300" />
+</p>
 
 <p align="justify">Pembuatan dashboard segera dieksekusi setelah dashboard dirancang sedemikian rupa. Pada pembuatan dashboard kali ini, digunakan aplikasi Tableau Public yang mana selain dapat memvisualisasikan dengan sangat baik, dashboard juga dapat diakses secara daring oleh pembaca. Pada dashboard terdapat side bar yang dapat mengakses ke lima halaman, yaitu halaman pertama sebagai default atau dashboard main yang memvisualisasikan hasil analisis cluster. Selain itu, keempat halaman lainnya akan mewakili visualisasi untuk tiap variabel yang digunakan. Pada dashboard tersedia pilihan untuk mengunduh dashboard baik dalam bentuk gambar ataupun pdf. Search bar juga menjadi salah satu fitur pada dashboard agar memudahkan pembaca untuk mencari informasi sesuai dengan provinsi ataupun kelompok daerah (cluster).</p>
 
