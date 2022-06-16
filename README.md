@@ -21,18 +21,20 @@ Berikut adalah data yang digunakan :
 ```{r}
 fviz_nbclust(df_num, kmeans, method = "silhouette") 
 ```
-
+![](kelompok.PNG)
 #### Proses Clustering
 ```{r}
 model=kmeans(df_num,centers=2,nstart=20)
 model
 model$centers
 ```
+![](centroid.PNG)
 #### Provinsi di Tiap Kelompok
 ```{r}
 final=data.frame(df, model$cluster)
 View(final)
 ```
+![](hasil.PNG)
 
 ## Perancangan Dashboard
 
