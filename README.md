@@ -11,32 +11,50 @@ Variabel yang digunakan adalah sebagai berikut :
 - Pelaporan Tamu Menginap (1x24 jam)
 
 Berikut adalah data yang digunakan :
-
-![](Data.PNG)
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/Data.PNG" width="300" height="450" />
+</p>
 
 ## K-Means Clustering
 <p align="justify">K-Means Clustering adalah salah cara untuk menganalisis kelompok dengan metode pengelompokan non hierarki (Supranto, 2004). Metode ini merupakan metode yang tepat untuk data yang cukup besar, selain itu proses pengelompokan pada metode non hirarki lebih cepat daripada metode hierarki. </p>
 
-#### Menentukan banyaknya kelompok (Metode Silhouette)
+> Menentukan banyaknya kelompok (Metode Silhouette) 
 ```{r}
 fviz_nbclust(df_num, kmeans, method = "silhouette") 
 ```
-![](kelompok.PNG)
-#### Proses Clustering
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/kelompok.PNG" width="500" height="300" />
+</p>
+
+> Proses Clustering
 ```{r}
 model=kmeans(df_num,centers=2,nstart=20)
 model
 model$centers
 ```
-![](centroid.PNG)
-#### Provinsi di Tiap Kelompok
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/centroid.PNG" />
+ </p>
+ 
+> Provinsi di Tiap Kelompok 
 ```{r}
 final=data.frame(df, model$cluster)
 View(final)
 ```
-![](hasil.PNG)
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/hasil.PNG" />
+</p>
 
 ## Perancangan Dashboard
+<p align="justify">
+Perancangan dashboard untuk memvisualisasikan hasil analisis cluster dibantu oleh Figma website yang dapat digunakan secara gratis. Selain itu, dashboard dirancang menggunakan tema Black and White agar pembaca yang memiliki buta warna baik parsial maupun total dapat memahami dashboard yang telah dibuat apalagi pada proses visualisasi banyak menggunakan peta tematik dalam bentuk choropleth yang membutuhkan gradasi warna. 
+Pada sebelah kiri dashboard, terdapat side bar yang dapat digunakan untuk memilih tampilan yang diinginkan.
+ </p>
+ 
+> Perancangan Dashboard Main (Hasil clustering)
+
+
+> Perancangan Dashboard X1, X2, X3, dan X4
 
 ## Visualisasi (Data dan Informasi) dan Pembuatan Dashboard
 Jenis visualisasi data dan informasi yang digunakan adalah :
@@ -47,7 +65,8 @@ Jenis visualisasi data dan informasi yang digunakan adalah :
 - Pie Chart
 - Tree Map Chart
 
-#### Tambahan pada Dashboard
+> Tambahan pada Dashboard
+> 
 Selain menampilkan visualisasi data dan informasi, terdapat beberapa tambahan pada dashboard untuk memudahkan pengguna.
 - Sidebar   : Pada sidebar terdapat 5 navigasi yang dapat mengarahkan langsung ke halaman variabel X1, X2, X3, ataupun X4. 
 - Tooltip   : Dikarenakan nama variabel yang panjang, pada button navigasi hanya ditulis X1, X2, X3, X4, dan main. Akan tetapi, apabila kursor diarahkan ke atas button navigasi maka akan keluar tooltip/keterangan yaitu nama variabel
@@ -60,14 +79,23 @@ Selain menampilkan visualisasi data dan informasi, terdapat beberapa tambahan pa
 > Dashboard utama
 
 Menampilkan visualisasi berupa peta tematik hasil clustering, boxplot untuk melihat outlier pada data yang digunakan, grouped barchart untuk membandingkan data dari tahun-tahun sebelumnya, pie chart untuk melihat perbandingan provinsi yang dikelompok baik dan buruk, serta tabel untuk menampilkan informasi centroid kelompok.
-![](Vmain.png)
+
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/Vmain.png" width="600" height="300" />
+</p>
 
 > Dashboard X1, X2, X3, dan X4
 
 Menampilkan visualisasi berupa peta tematik, treemap, dan tabel untuk masing-masing variabel.
-![](V1.png)
-![](V2.png)
-![](V3.png)
-![](V4.png)
+
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V1.png" width="600" height="300" />
+
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V2.png" width="600" height="300" />
+
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V3.png" width="600" height="300" />
+
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V4.png" width="600" height="300" />
+</p>
 
 
