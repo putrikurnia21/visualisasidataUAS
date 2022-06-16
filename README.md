@@ -18,8 +18,14 @@ Berikut adalah data yang digunakan :
 ## Eksplorasi Data
 * Pemeriksaan Outlier
 Dari hasil boxplot pada gambar di atas didapatkan bahwa terdapat pencilan pada data khususnya pada variabel menambah anggota hansip (X3) dan pelaporan tamu menginap 1x24jam (X4). Umumnya, jika terdapat pencilan maka peneliti membuang ataupun mempertahankan pencilan tersebut dengan pertimbangan berdasarkan objek penelitian. Pada penelitian ini, pencilan tidak perlu dibuang dikarenakan merupakan data asli 
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/boxplot.png" width="400" height="250" />
+</p>
 
 * Statistik Deskriptif
+<p align="center">
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/summary.PNG" width="400" height="250" />
+</p>
 1. X1 : Papua ialah provinsi dengan persentase upaya membangun poskamling terkecil, yaitu sebesar 7,94 persen, sedangkan  Jawa Barat ialah provinsi dengan persentase desa/kelurahan dengan upaya membangun poskamling terbesar yaitu 90,80 persen. 
 2. X2 : Provinsi Papua merupakan provinsi dengan persentase membentuk regu kamling terkecil, yaitu sebesar 11,65 persen. Sedangkan, provinsi DI Yogyakarta ialah provinsi dengan persentase upaya membentuk regu kamling terbesar yaitu 79,22 persen. 
 3. X3 : Variabel selanjutnya adalah persentase desa/kelurahan dengan upaya menambah anggota hansip dengan rata-rata 26,53 persen. Provinsi Papua Barat merupakan provinsi  terkecil, yaitu 3,07 persen, sedangkan DI Yogyakarta ialah provinsi terbesar yaitu sebesar 50,68 persen.
@@ -32,7 +38,7 @@ Dari hasil boxplot pada gambar di atas didapatkan bahwa terdapat pencilan pada d
 fviz_nbclust(df_num, kmeans, method = "silhouette") 
 ```
 <p align="center">
-<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/kelompok.PNG" width="500" height="300" />
+<img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/kelompok.PNG" width="400" height="250" />
 </p>
 
 Pada Gambar tampak bahwa banyak klaster yang optimal terbentuk saat k=2. Maka untuk melakukan analisis kelompok akan digunakan k=2.
@@ -113,11 +119,17 @@ Menampilkan visualisasi berupa peta tematik, treemap, dan tabel untuk masing-mas
 
 <p align="center">
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V1.png" width="600" height="300" />
+</p>
 
+<p align="center">
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V2.png" width="600" height="300" />
+</p>
 
+<p align="center">
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V3.png" width="600" height="300" />
+</p>
 
+<p align="center">
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/V4.png" width="600" height="300" />
 </p>
 
