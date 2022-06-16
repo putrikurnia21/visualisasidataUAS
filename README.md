@@ -15,6 +15,15 @@ Berikut adalah data yang digunakan :
 <img src = "https://github.com/putrikurnia21/visualisasidataUAS/blob/main/Data.PNG" width="300" height="450" />
 </p>
 
+## Eksplorasi Data
+* Pemeriksaan Outlier
+Dari hasil boxplot pada gambar di atas didapatkan bahwa terdapat pencilan pada data khususnya pada variabel menambah anggota hansip (X3) dan pelaporan tamu menginap 1x24jam (X4). Umumnya, jika terdapat pencilan maka peneliti membuang ataupun mempertahankan pencilan tersebut dengan pertimbangan berdasarkan objek penelitian. Pada penelitian ini, pencilan tidak perlu dibuang dikarenakan merupakan data asli 
+
+* Statistik Deskriptif
+1. X1 : Papua ialah provinsi dengan persentase upaya membangun poskamling terkecil, yaitu sebesar 7,94 persen, sedangkan  Jawa Barat ialah provinsi dengan persentase desa/kelurahan dengan upaya membangun poskamling terbesar yaitu 90,80 persen. 
+2. X2 : Provinsi Papua merupakan provinsi dengan persentase membentuk regu kamling terkecil, yaitu sebesar 11,65 persen. Sedangkan, provinsi DI Yogyakarta ialah provinsi dengan persentase upaya membentuk regu kamling terbesar yaitu 79,22 persen. 
+3. X3 : Variabel selanjutnya adalah persentase desa/kelurahan dengan upaya menambah anggota hansip dengan rata-rata 26,53 persen. Provinsi Papua Barat merupakan provinsi  terkecil, yaitu 3,07 persen, sedangkan DI Yogyakarta ialah provinsi terbesar yaitu sebesar 50,68 persen.
+4. X4 : Variabel terakhir ialah  upaya pelaporan tamu menginap dalam kurun waktu 1x24 jam dengan rata-rata 63,98 persen. Provinsi Papua merupakan provinsi terkecil, yaitu 3,07 persen, sedangkan DKI Jakarta ialah provinsi terbesar yaitu sebesar 90,64 persen
 ## K-Means Clustering
 <p align="justify">K-Means Clustering adalah salah cara untuk menganalisis kelompok dengan metode pengelompokan non hierarki (Supranto, 2004). Metode ini merupakan metode yang tepat untuk data yang cukup besar, selain itu proses pengelompokan pada metode non hirarki lebih cepat daripada metode hierarki. </p>
 
